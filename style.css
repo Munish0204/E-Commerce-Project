@@ -1,0 +1,295 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body
+{
+        font-family: "Poppins", sans-serif  
+}  
+
+.navbar
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.navbar-links
+{
+    display: flex;
+    column-gap: 20px;
+
+}
+
+.navbar-links a
+{
+    text-decoration: none;
+    color:#1D232C;
+}
+
+.navbar-links a:hover
+{
+    text-decoration: underline;
+    color: #1D232C;
+}
+
+.navbar-menu-toggle
+{
+    display: none;
+
+}
+
+
+
+/*Side Navbar*/
+
+.side-navbar
+{
+    background-color: #1D232C;
+    width: 15%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: -50%;
+    padding: 20px;
+    color: white;
+    transition: 2s;
+    
+}
+
+.side-navbar-link
+{
+    margin-bottom: 30px;
+
+}
+
+.side-navbar-link a{
+    text-decoration: none;
+    color: white;
+    
+}
+
+
+/*Header*/
+
+.header
+{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 50px;
+}
+
+.header-button
+{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    background-color: #1D232C;
+    color: white;
+    cursor: pointer;
+}
+
+
+
+.service
+{
+    padding: 20px;
+
+}
+
+.service-contanier-1
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.service-contanier-2
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.service-contanier-2 div{
+    background-color: #F2F4F7;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.new-arrival
+{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.new-arrival-contanier
+{
+    position: relative;
+    flex-basis: 20%;
+
+}
+
+.new-arrival button
+{
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    margin: 10px;
+    color: #1D232C;
+    position: absolute;
+    top: 50%;
+    left: 14%;
+    border-radius: 10px;
+    border: none;
+}
+
+.news
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.news input
+{
+    padding: 11px;
+    width: 80vw;
+    margin-bottom: 10px;
+    border: solid black 3px;
+}
+
+
+.news-button
+{
+    margin-top: 10px;
+    color: #F2F4F7;
+    background-color: #1D232C;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.footer
+{
+    margin-top: 10px;
+    color: #F2F4F7;
+    background-color: #1D232C;
+    border-radius: 10px;
+    padding: 40px;
+}
+
+.product-section
+{
+    margin-top: 20px;
+}
+
+.product-search
+{
+    width: 80%;
+    border: solid black 2px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: auto;
+}
+
+.product-search input
+{
+    border: none;
+    background-color: transparent;
+    width: 50%;
+
+}
+
+.product-search input:focus
+{
+    outline: none;
+    
+}
+
+.products
+{
+    padding: 20px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: space-around;    
+}
+
+.products-box
+{
+    text-align: center;
+    flex-basis: 20%;
+}
+
+.products-box img
+{
+    border-radius: 10px;
+}
+
+.button
+{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    background-color: greenyellow;
+    color:#1D232C;
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+}
+.form-container
+{
+    background-color:skyblue;
+    color: #1D232C;
+    padding: 20px;
+    border-radius: 50%;
+}
+
+
+/*Media Query*/
+
+@media screen and (max-width:700px) 
+{
+    .navbar-menu-toggle
+    {
+        display: block;
+    
+    }   
+
+.navbar-links
+{
+    display: none;
+
+}
+
+.header-image
+{
+    display: none;
+}
+
+.service-contanier-1
+{
+    display: none;
+}
+
+.service-contanier-2
+{
+    flex-direction: column;
+}
+}
